@@ -6,8 +6,9 @@
   <link rel="icon" type="image/svg+xml" href="/logo1.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Property | UD&HD</title>
-  <script type="module" crossorigin src="/assets/index-672077a1.js"></script>
-  <link rel="stylesheet" href="/assets/index-bf446713.css">
+  <!-- <script type="text/javascript" src="https://www.google.com/jsapi"></script>s -->
+  <script type="module" crossorigin src="/assets/index-c14e0893.js"></script>
+  <link rel="stylesheet" href="/assets/index-3d120891.css">
 </head>
 
 <body class="font-sans text-base font-normal"
@@ -15,7 +16,7 @@
   <div id="root"></div>
   <div id="modal"></div>
   <button value="" id="printClick" onclick="printData()" style="visibility:hidden">print click</button>
-  <button  id="hideButton" onclick="hidePrintButton()" style="visibility:hidden">hide button</button>
+  <button id="hideButton" onclick="hidePrintButton()" style="visibility:hidden">hide button</button>
   
 
   <script>
@@ -45,9 +46,9 @@
       event.preventDefault()
       return "hello"
     }
-   
+
     function printData() {
-      let printData =  document.getElementById('printClick').value 
+      let printData = document.getElementById('printClick').value
       // let printData =  dummyText 
       AndroidInterface.btPrinter(printData)
     }
@@ -56,7 +57,34 @@
     }
 
   </script>
- 
+
+  <script type="text/javascript">
+    // google.load("elements", "1", {
+    //   packages: "transliterate"
+    // });
+
+    // function changeLanguage() {
+    //   var options = {
+    //     sourceLanguage:
+    //       google.elements.transliteration.LanguageCode.ENGLISH,
+    //     destinationLanguage:
+    //       [google.elements.transliteration.LanguageCode.HINDI],
+    //     shortcutKey: 'ctrl+g',
+    //     transliterationEnabled: true
+    //   };
+
+    //   // Create an instance on TransliterationControl with the required
+    //   // options.
+    //   var control =
+    //     new google.elements.transliteration.TransliterationControl(options);
+
+    //   // Enable transliteration in the textbox with id
+    //   // 'transliterateTextarea'.
+    //   control.makeTransliteratable(['transliterateTextarea']);
+    // }
+    // google.setOnLoadCallback(changeLanguage);
+  </script>
+
 </body>
 
 </html>
