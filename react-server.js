@@ -79,6 +79,6 @@ app.get("/grievance/*", (req, res) => {
   res.sendFile(path.join(__dirname, "grievance_build", "index.html"));
 });
 // start express server on port 80
-app.listen(80, () => {
+app.listen(8085, () => {
   console.log("server started on port 80");
 });
