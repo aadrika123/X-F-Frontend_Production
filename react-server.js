@@ -19,6 +19,7 @@ app.use(express.static("dashboard_build"));
 app.use(express.static("advertisement_build"));
 app.use(express.static("citizen_mb_build"));
 app.use(express.static("tanker_admin_build"));
+app.use(express.static("grievance_build"));
 
 //actual routes
 app.get("/citizen", (req, res) => {
@@ -70,6 +71,12 @@ app.get("/agency", (req, res) => {
 });
 app.get("/agency/*", (req, res) => {
   res.sendFile(path.join(__dirname, "tanker_admin_build", "index.html"));
+});
+app.get("/grievance", (req, res) => {
+  res.sendFile(path.join(__dirname, "grievance_build", "index.html"));
+});
+app.get("/grievance/*", (req, res) => {
+  res.sendFile(path.join(__dirname, "grievance_build", "index.html"));
 });
 // start express server on port 80
 app.listen(80, () => {
