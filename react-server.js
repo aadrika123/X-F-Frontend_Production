@@ -20,6 +20,7 @@ app.use(express.static("advertisement_build"));
 app.use(express.static("citizen_mb_build"));
 app.use(express.static("tanker_admin_build"));
 app.use(express.static("grievance_build"));
+app.use(express.static("daily_license_build"));
 
 //actual routes
 app.get("/citizen", (req, res) => {
@@ -77,6 +78,12 @@ app.get("/grievance", (req, res) => {
 });
 app.get("/grievance/*", (req, res) => {
   res.sendFile(path.join(__dirname, "grievance_build", "index.html"));
+});
+app.get("/daily-license-app", (req, res) => {
+  res.sendFile(path.join(__dirname, "daily_license_build", "index.html"));
+});
+app.get("/daily-license-app/*", (req, res) => {
+  res.sendFile(path.join(__dirname, "daily_license_build", "index.html"));
 });
 // start express server on port 80
 app.listen(80, () => {
