@@ -86,6 +86,6 @@ app.get("/daily-license-app/*", (req, res) => {
   res.sendFile(path.join(__dirname, "daily_license_build", "index.html"));
 });
 // start express server on port 80
-app.listen(80, () => {
+app.listen(500, () => {
   console.log("server started on port 80");
 });
