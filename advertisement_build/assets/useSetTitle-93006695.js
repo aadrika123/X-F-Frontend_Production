@@ -1,1 +1,0 @@
-import{R as s,U as o,r as a}from"./index-41dca16b.js";function c(t){const{settitleText:e}=s.useContext(o);a.useEffect(()=>{e(t)},[])}export{c as u};
