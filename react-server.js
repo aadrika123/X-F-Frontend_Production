@@ -80,10 +80,10 @@ app.get("/grievance", (req, res) => {
 app.get("/grievance/*", (req, res) => {
   res.sendFile(path.join(__dirname, "grievance_build", "index.html"));
 });
-app.get("/daily-license-app", (req, res) => {
+app.get("/modules-app", (req, res) => {
   res.sendFile(path.join(__dirname, "daily_license_build", "index.html"));
 });
-app.get("/daily-license-app/*", (req, res) => {
+app.get("/modules-app/*", (req, res) => {
   res.sendFile(path.join(__dirname, "daily_license_build", "index.html"));
 });
 app.get("/liveDashboard", (req, res) => {
