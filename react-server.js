@@ -22,6 +22,7 @@ app.use(express.static("tanker_admin_build"));
 app.use(express.static("grievance_build"));
 app.use(express.static("daily_license_build"));
 app.use(express.static("rmsDashboard_build"));
+app.use(express.static("native_app_build"));
 
 //actual routes
 app.get("/citizen", (req, res) => {
@@ -80,11 +81,17 @@ app.get("/grievance", (req, res) => {
 app.get("/grievance/*", (req, res) => {
   res.sendFile(path.join(__dirname, "grievance_build", "index.html"));
 });
-app.get("/modules-app", (req, res) => {
+app.get("/daily-license-app", (req, res) => {
   res.sendFile(path.join(__dirname, "daily_license_build", "index.html"));
 });
-app.get("/modules-app/*", (req, res) => {
+app.get("/daily-license-app/*", (req, res) => {
   res.sendFile(path.join(__dirname, "daily_license_build", "index.html"));
+});
+app.get("/modules-app", (req, res) => {
+  res.sendFile(path.join(__dirname, "native_app_build", "index.html"));
+});
+app.get("/modules-app/*", (req, res) => {
+  res.sendFile(path.join(__dirname, "native_app_build", "index.html"));
 });
 app.get("/liveDashboard", (req, res) => {
   res.sendFile(path.join(__dirname, "rmsDashboard_build", "index.html"));
