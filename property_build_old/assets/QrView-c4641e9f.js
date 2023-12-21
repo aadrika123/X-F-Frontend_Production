@@ -1,1 +1,0 @@
-import{r as e,j as t}from"./index-54b5d5d6.js";import{Q as s}from"./QrCode-0fcfa631.js";import"./index-5c644abe.js";function n(){const[r,a]=e.useState("upi://9031578239@paytm");return t.jsx(t.Fragment,{children:t.jsx("div",{className:"flex justify-center items-center",children:t.jsx(s,{url:r,size:"300"})})})}export{n as default};
