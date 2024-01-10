@@ -1,1 +1,0 @@
-import{j as e}from"./index-1sqOiZBd.js";function n(){return e.jsx("div",{className:"flex justify-center mt-96",children:e.jsx("h1",{className:"text-2xl font-semibold text-red-900 text-center",children:"Under maintenance"})})}export{n as default};
