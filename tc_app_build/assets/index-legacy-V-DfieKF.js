@@ -1,0 +1,1 @@
+System.register(["./index-legacy-JuVu96Kw.js"],(function(e,t){"use strict";var n;return{setters:[function(e){n=e.j}],execute:function(){e("default",(function(){return n.jsx("div",{className:"flex justify-center mt-96",children:n.jsx("h1",{className:"text-2xl font-semibold text-red-900 text-center",children:"Under maintenance"})})}))}}}));
