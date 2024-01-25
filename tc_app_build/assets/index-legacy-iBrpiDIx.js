@@ -1,0 +1,1 @@
+System.register(["./index-legacy-A4VBbd_s.js"],(function(e,t){"use strict";var n;return{setters:[function(e){n=e.j}],execute:function(){e("default",(function(){return n.jsx("div",{children:"WaterPage"})}))}}}));
