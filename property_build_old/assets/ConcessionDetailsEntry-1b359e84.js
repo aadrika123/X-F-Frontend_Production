@@ -1,0 +1,5 @@
+<<<<<<<< HEAD:property_build/assets/ConcessionDetailsEntry-429fe3d5.js
+import{a as o,j as t,C as e,ai as a}from"./index-b7a9b315.js";import{D as n}from"./DetailsFactory-c2fa8a91.js";import"./TopTabs-3a00e7a0.js";function c(){o("Concession Details");const{get_ConcessionDetailsById:s}=a(),i={api:{api_getAppicationFullDetail:{method:"post",url:s}},detailInfo:{title:"Concession Details"},filters:{topButtons:!1}};return t.jsx(e,{errorMsg:"Bug in TransactionHistoryFactory",children:t.jsx(n,{detailRules:i})})}export{c as default};
+========
+import{a as o,j as t,C as e,ai as a}from"./index-e489eabe.js";import{D as n}from"./DetailsFactory-8bde6322.js";import"./TopTabs-501763e4.js";function c(){o("Concession Details");const{get_ConcessionDetailsById:s}=a(),i={api:{api_getAppicationFullDetail:{method:"post",url:s}},detailInfo:{title:"Concession Details"},filters:{topButtons:!1}};return t.jsx(e,{errorMsg:"Bug in TransactionHistoryFactory",children:t.jsx(n,{detailRules:i})})}export{c as default};
+>>>>>>>> 84bbcc4b8fa1f57703215b58587961a8c430cc43:property_build_old/assets/ConcessionDetailsEntry-1b359e84.js

@@ -116,6 +116,10 @@ app.get("/userControl/*", (req, res) => {
 // start express server on port 80
 app.listen(500, () => {
   console.log("server started on port 500");
+<<<<<<< HEAD
 
 });
 
+=======
+});
+>>>>>>> 84bbcc4b8fa1f57703215b58587961a8c430cc43
