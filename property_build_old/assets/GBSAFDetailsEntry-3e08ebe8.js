@@ -1,5 +1,0 @@
-<<<<<<<< HEAD:property_build/assets/GBSAFDetailsEntry-5d8d1424.js
-import{a as e,u as i,j as o,P as l}from"./index-b7a9b315.js";import{D as r}from"./DetailsFactory-c2fa8a91.js";import"./TopTabs-3a00e7a0.js";function f(){e("GB SAF Details");const{id:t}=i(),{get_GbSafDetailsById:s}=l(),a={api:{api_getAppicationFullDetail:{method:"post",url:s}},detailInfo:{title:"GBSAF Details"},filters:{topButtons:!1}};return console.log("gb saf page is calling..."),o.jsx(r,{detailRules:a,id:t})}export{f as default};
-========
-import{a as e,u as i,j as o,P as l}from"./index-e489eabe.js";import{D as r}from"./DetailsFactory-8bde6322.js";import"./TopTabs-501763e4.js";function f(){e("GB SAF Details");const{id:t}=i(),{get_GbSafDetailsById:s}=l(),a={api:{api_getAppicationFullDetail:{method:"post",url:s}},detailInfo:{title:"GBSAF Details"},filters:{topButtons:!1}};return console.log("gb saf page is calling..."),o.jsx(r,{detailRules:a,id:t})}export{f as default};
->>>>>>>> 84bbcc4b8fa1f57703215b58587961a8c430cc43:property_build_old/assets/GBSAFDetailsEntry-3e08ebe8.js
