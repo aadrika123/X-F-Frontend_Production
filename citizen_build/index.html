@@ -5,88 +5,36 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/logo1.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Property | Akola Municipal Corporation</title>
-  <!-- <script type="text/javascript" src="https://www.google.com/jsapi"></script>s -->
-  <!-- <script type="text/javascript"
-    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> -->
-  <script type="module" crossorigin src="/assets/index-fd48f800.js"></script>
-  <link rel="stylesheet" href="/assets/index-c20a221b.css">
+  <script src="https://www.paynimo.com/paynimocheckout/client/lib/jquery.min.js" type="text/javascript"></script>
+  <title> Citizen | Akola Municipal Corporation</title>
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>  <!--- Don't remove this is for razor pay payment  -->
+  <script type="module" crossorigin src="/assets/index-1d38de8b.js"></script>
+  <link rel="stylesheet" href="/assets/index-bde2034c.css">
 </head>
 
-<body class="font-sans text-base font-normal "
-  style="background-color: #F6F5FF; overflow-x: hidden;height: 100vh;overflow-y: hidden;" id="body">
-  <div id="root" ></div>
+<body class="">
+  <script type="text/javascript" src="https://www.paynimo.com/paynimocheckout/server/lib/checkout.js"></script>
+  <div id="root"></div>
   <div id="modal"></div>
-  <button value="" id="printClick" onclick="printData()" style="visibility:hidden">print click</button>
-  <button id="hideButton" onclick="hidePrintButton()" style="visibility:hidden">hide button</button>
   
-
-  <script>
-    const dummyText = "<nc>JUIDCO Property Payment Receipt</nc><br />" +
-      "<n>-----------------------------------------</n><br />" +
-      "<n>Date           :  </n><br />" +
-      "<n>POS ID         :  XXXXXXXXXXX</n><br />" +
-      "<n>Ward No.       :  </n><br />" +
-      "<n>Transaction No.:  </n><br />" +
-      "<n>Holding No.    :  </n><br />" +
-      "<n>Citizen Name    :  Talib con</n><br />" +
-      "<n>-----------------------------------------</n><br />" +
-      "<n>Amount Paid   :  </n><br />" +
-      "<n>Paid  Upto    :  </n><br />" +
-      "<n>Payment Mode  :  </n><br />" +
-      "<n>------------------------------------------</n><br />" +
-      "<n>TC Name        :   </n><br />" +
-      "<n>Mobile No.     :   </n><br />" +
-      "<n>Please keep this Bill For Future Reference</n><br />" +
-      "<n></n><br />" +
-      "<n></n><br />" +
-      "<n></n><br />" +
-      "<n></n><br />" +
-      "<n></n><br />"
-
-    function fun(event) {
-      event.preventDefault()
-      return "hello"
-    }
-
-    function printData() {
-      let printData = document.getElementById('printClick').value
-      // let printData =  dummyText 
-      AndroidInterface.btPrinter(printData)
-    }
-    function hidePrintButton() {
-      AndroidInterface.btPrinterHide()
-    }
-
-  </script>
-
-  <script type="text/javascript">
-    // google.load("elements", "1", {
-    //   packages: "transliterate"
-    // });
-
-    // function changeLanguage() {
-    //   var options = {
-    //     sourceLanguage:
-    //       google.elements.transliteration.LanguageCode.ENGLISH,
-    //     destinationLanguage:
-    //       [google.elements.transliteration.LanguageCode.HINDI],
-    //     shortcutKey: 'ctrl+g',
-    //     transliterationEnabled: true
-    //   };
-
-    //   // Create an instance on TransliterationControl with the required
-    //   // options.
-    //   var control =
-    //     new google.elements.transliteration.TransliterationControl(options);
-
-    //   // Enable transliteration in the textbox with id
-    //   // 'transliterateTextarea'.
-    //   control.makeTransliteratable(['transliterateTextarea']);
-    // }
-    // google.setOnLoadCallback(changeLanguage);
-  </script>
-
 </body>
-
+<!-- <script type="text/javascript">
+  document.onkeydown = function(e) {
+      if(event.keyCode == 123) {
+          return false;
+      }
+      if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){
+          return false;
+      }
+      if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){
+          return false;
+      }
+      if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)){
+          return false;
+      }
+      if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){
+          return false;
+      }
+  }
+</script> -->
 </html>
